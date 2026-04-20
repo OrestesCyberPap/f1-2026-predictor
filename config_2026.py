@@ -91,16 +91,15 @@ for team, info in GRID_2026.items():
 
 # ──────────────────────────────────────────────
 # Power Unit (PU) Competitiveness Ratings
-# Split into ICE (Internal Combustion), MGU-K Deployment (Boost),
-# and MGU-K Recovery (Energy Harvesting). Scale 0-100.
+# Scale 0-100.
 # ──────────────────────────────────────────────
 PU_RATINGS = {
-    "Ferrari":        {"ice": 95, "mguk_deploy": 94, "mguk_recover": 88},
-    "Mercedes":       {"ice": 92, "mguk_deploy": 90, "mguk_recover": 95},
-    "Red Bull Ford":  {"ice": 89, "mguk_deploy": 96, "mguk_recover": 82},
-    "Honda":          {"ice": 91, "mguk_deploy": 88, "mguk_recover": 93},
-    "Audi":           {"ice": 75, "mguk_deploy": 70, "mguk_recover": 72},
-    "Toyota":         {"ice": 78, "mguk_deploy": 76, "mguk_recover": 74},
+    "Ferrari":        95,
+    "Mercedes":       92,
+    "Red Bull Ford":  89,
+    "Honda":          91,
+    "Audi":           75,
+    "Toyota":         78,
 }
 
 # ──────────────────────────────────────────────
@@ -154,34 +153,32 @@ DRIVER_RATINGS = {
 }
 
 # ──────────────────────────────────────────────
-# Override Potential & Tyre Management Skill
+# Override Potential
 # override_pot: A driver's tendency to exploit close-following (0-1.0)
-# battery_strat: How well they manage battery drain for the 350kW override (0-1.0)
-# tyre_mgmt: Ability to preserve tyres, heavily affected by 30kg lighter cars (0-100)
 # ──────────────────────────────────────────────
-DRIVER_SPECIFICS = {
-    "Max Verstappen":          {"override_pot": 0.95, "battery_strat": 0.94, "tyre_mgmt": 96},
-    "Lewis Hamilton":          {"override_pot": 0.88, "battery_strat": 0.96, "tyre_mgmt": 98},
-    "Charles Leclerc":         {"override_pot": 0.85, "battery_strat": 0.85, "tyre_mgmt": 89},
-    "Lando Norris":            {"override_pot": 0.87, "battery_strat": 0.88, "tyre_mgmt": 90},
-    "George Russell":          {"override_pot": 0.80, "battery_strat": 0.85, "tyre_mgmt": 88},
-    "Oscar Piastri":           {"override_pot": 0.82, "battery_strat": 0.83, "tyre_mgmt": 87},
-    "Carlos Sainz":            {"override_pot": 0.79, "battery_strat": 0.89, "tyre_mgmt": 94},
-    "Fernando Alonso":         {"override_pot": 0.90, "battery_strat": 0.95, "tyre_mgmt": 93},
-    "Pierre Gasly":            {"override_pot": 0.75, "battery_strat": 0.78, "tyre_mgmt": 82},
-    "Alexander Albon":         {"override_pot": 0.74, "battery_strat": 0.75, "tyre_mgmt": 85},
-    "Yuki Tsunoda":            {"override_pot": 0.78, "battery_strat": 0.70, "tyre_mgmt": 78},
-    "Liam Lawson":             {"override_pot": 0.72, "battery_strat": 0.73, "tyre_mgmt": 79},
-    "Esteban Ocon":            {"override_pot": 0.73, "battery_strat": 0.76, "tyre_mgmt": 83},
-    "Lance Stroll":            {"override_pot": 0.65, "battery_strat": 0.68, "tyre_mgmt": 74},
-    "Nico Hulkenberg":         {"override_pot": 0.70, "battery_strat": 0.75, "tyre_mgmt": 77},
-    "Valtteri Bottas":         {"override_pot": 0.68, "battery_strat": 0.74, "tyre_mgmt": 81},
-    "Sergio Perez":            {"override_pot": 0.71, "battery_strat": 0.82, "tyre_mgmt": 95},
-    "Andrea Kimi Antonelli":   {"override_pot": 0.70, "battery_strat": 0.65, "tyre_mgmt": 75},
-    "Jack Doohan":             {"override_pot": 0.66, "battery_strat": 0.68, "tyre_mgmt": 73},
-    "Oliver Bearman":          {"override_pot": 0.69, "battery_strat": 0.70, "tyre_mgmt": 74},
-    "Isack Hadjar":            {"override_pot": 0.71, "battery_strat": 0.65, "tyre_mgmt": 72},
-    "Gabriel Bortoleto":       {"override_pot": 0.67, "battery_strat": 0.69, "tyre_mgmt": 75},
+OVERRIDE_POTENTIAL = {
+    "Max Verstappen":          0.95,
+    "Lewis Hamilton":          0.88,
+    "Charles Leclerc":         0.85,
+    "Lando Norris":            0.87,
+    "George Russell":          0.80,
+    "Oscar Piastri":           0.82,
+    "Carlos Sainz":            0.79,
+    "Fernando Alonso":         0.90,
+    "Pierre Gasly":            0.75,
+    "Alexander Albon":         0.74,
+    "Yuki Tsunoda":            0.78,
+    "Liam Lawson":             0.72,
+    "Esteban Ocon":            0.73,
+    "Lance Stroll":            0.65,
+    "Nico Hulkenberg":         0.70,
+    "Valtteri Bottas":         0.68,
+    "Sergio Perez":            0.71,
+    "Andrea Kimi Antonelli":   0.70,
+    "Jack Doohan":             0.66,
+    "Oliver Bearman":          0.69,
+    "Isack Hadjar":            0.71,
+    "Gabriel Bortoleto":       0.67,
 }
 
 # ──────────────────────────────────────────────

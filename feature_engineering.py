@@ -11,7 +11,7 @@ import numpy as np
 from config_2026 import (
     GRID_2026, DRIVER_TO_TEAM, DRIVER_TO_ENGINE,
     PU_RATINGS, ACTIVE_AERO_RATINGS, DRIVER_RATINGS,
-    DRIVER_SPECIFICS, TRACK_PROFILES, REG_WEIGHTS,
+    OVERRIDE_POTENTIAL, TRACK_PROFILES, REG_WEIGHTS,
     HISTORICAL_SEASONS, CURRENT_SEASON, CALENDAR_2026,
     NEXT_RACE_NAME, NEXT_RACE_ROUND
 )
@@ -131,20 +131,10 @@ def build_driver_features(
     track = TRACK_PROFILES.get(track_name, {})
 
     # ── Base attributes ──
-    # MGU-K / ICE splits
-    engine_stats    = PU_RATINGS.get(engine, {"ice": 80, "mguk_deploy": 80, "mguk_recover": 80})
-    ice_power       = engine_stats["ice"] / 100.0
-    mguk_deploy     = engine_stats["mguk_deploy"] / 100.0
-    mguk_recover    = engine_stats["mguk_recover"] / 100.0
-
+    pu_rating       = PU_RATINGS.get(engine, 80) / 100.0
     aero_rating     = ACTIVE_AERO_RATINGS.get(team, 65) / 100.0
     driver_skill    = DRIVER_RATINGS.get(driver, 70) / 100.0
-    
-    # Driver Specifics
-    ds = DRIVER_SPECIFICS.get(driver, {"override_pot": 0.5, "battery_strat": 0.5, "tyre_mgmt": 70})
-    override_pot    = ds["override_pot"]
-    battery_strat   = ds["battery_strat"]
-    tyre_mgmt       = ds["tyre_mgmt"] / 100.0
+    override_pot    = OVERRIDE_POTENTIAL.get(driver, 0.5)
 
     # ── Track-specific modifiers ──
     x_mode   = track.get("x_mode_weight", 0.5)
@@ -152,21 +142,11 @@ def build_driver_features(
     mech_grip = track.get("mechanical_grip", 0.5)
     overtake_opp = track.get("overtaking_opportunity", 0.5)
 
-    # Straight-line dominance: Heavily favors high X-Mode tracks (Monza, Vegas, Miami)
-    straight_line_dominance = x_mode / (x_mode + z_mode + 0.001)
-
     # Active Aero composite: team's aero rating weighted by track profile
-    aero_track_score = aero_rating * (x_mode * straight_line_dominance + z_mode * (1 - straight_line_dominance))
+    aero_track_score = aero_rating * (x_mode + z_mode) / 2.0
 
-    # Chassis agility advantage: 30kg lighter car helps mechanically, 
-    # but tyre whisperers lose some of their historical advantage
-    chassis_score = mech_grip * tyre_mgmt * 1.2  
-
-    # MGU-K Advantage: High overtake tracks demand heavy deployment and recovery
-    mguk_advantage = (mguk_deploy * overtake_opp) + (mguk_recover * (1 - straight_line_dominance))
-
-    # Override potential adjusted by track overtaking opportunity and driver's battery strategy
-    override_adjusted = override_pot * battery_strat * overtake_opp
+    # Chassis agility advantage: 30kg lighter car helps mechanically
+    chassis_score = mech_grip * 1.2  
 
     # ── Rolling form (from historical data) ──
     form_row = rolling_form[rolling_form["driver"] == driver] if not rolling_form.empty else pd.DataFrame()
@@ -197,16 +177,11 @@ def build_driver_features(
         "engine":               engine,
         "track":                track_name,
         # Core 2026 regulation features
-        "ice_power":            ice_power,
-        "mguk_deploy":          mguk_deploy,
-        "mguk_recover":         mguk_recover,
-        "mguk_advantage":       mguk_advantage,
+        "pu_rating":            pu_rating,
         "aero_track_score":     aero_track_score,
-        "straight_line_dom":    straight_line_dominance,
         "driver_skill":         driver_skill,
-        "override_adjusted":    override_adjusted,
+        "override_pot":         override_pot,
         "chassis_score":        chassis_score,
-        "tyre_mgmt":            tyre_mgmt,
         # Historical features
         "form_score":           form_score,
         "avg_finish":           avg_finish,
@@ -358,16 +333,11 @@ def _match_track(race_name: str, circuit: str) -> str:
 # Feature columns used by the model
 # ──────────────────────────────────────────────
 FEATURE_COLS = [
-    "ice_power",
-    "mguk_deploy",
-    "mguk_recover",
-    "mguk_advantage",
+    "pu_rating",
     "aero_track_score",
-    "straight_line_dom",
     "driver_skill",
-    "override_adjusted",
+    "override_pot",
     "chassis_score",
-    "tyre_mgmt",
     "form_score",
     "avg_finish",
     "avg_grid",
@@ -387,4 +357,4 @@ if __name__ == "__main__":
     # Quick test with empty data
     matrix = build_race_feature_matrix("Suzuka", pd.DataFrame())
     print(f"Feature matrix shape: {matrix.shape}")
-    print(matrix[["driver", "team", "ice_power", "driver_skill", "aero_track_score"]].to_string())
+    print(matrix[["driver", "team", "pu_rating", "driver_skill", "aero_track_score"]].to_string())

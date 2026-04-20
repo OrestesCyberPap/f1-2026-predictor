@@ -208,9 +208,6 @@ with st.sidebar:
     st.markdown("""
     <div class="glass-card" style="padding:12px 16px; font-size:0.82rem;">
         ✅ Jolpica API (Ergast)<br>
-        ✅ OpenF1 API<br>
-        ✅ FastF1 Telemetry<br>
-        ✅ Wikipedia Scraping
     </div>
     """, unsafe_allow_html=True)
 
@@ -400,10 +397,10 @@ if run_button or st.session_state.pipeline_run:
         # Radar chart: top 5 drivers' feature profiles
         st.markdown("### 🎯 Driver Feature Radar — Top 5")
         top5 = predictions.head(5)
-        radar_features = ["ice_power", "mguk_advantage", "aero_track_score",
-                          "override_adjusted", "tyre_mgmt", "form_score"]
-        radar_labels = ["ICE Power", "MGU-K Advantage", "Active Aero",
-                        "Override Mode", "Tyre Mgmt", "Historical Form"]
+        radar_features = ["pu_rating", "aero_track_score", "driver_skill",
+                          "override_pot", "chassis_score", "form_score"]
+        radar_labels = ["Power Unit", "Active Aero", "Driver Skill",
+                        "Override", "Chassis", "Historical Form"]
 
         # Helper to convert hex to rgba
         def hex_to_rgba(hex_color, alpha=0.15):
@@ -449,20 +446,17 @@ if run_button or st.session_state.pipeline_run:
 
         # PU Ratings chart
         pu_rows = []
-        for eng, stats in PU_RATINGS.items():
-            pu_rows.append({"Engine": eng, "Component": "ICE Power", "Rating": stats["ice"]})
-            pu_rows.append({"Engine": eng, "Component": "MGU-K Deploy", "Rating": stats["mguk_deploy"]})
-            pu_rows.append({"Engine": eng, "Component": "MGU-K Recover", "Rating": stats["mguk_recover"]})
+        for eng, rating in PU_RATINGS.items():
+            pu_rows.append({"Engine": eng, "Rating": rating})
         pu_df = pd.DataFrame(pu_rows)
 
         col_left, col_right = st.columns(2)
 
         with col_left:
-            st.markdown("#### ⚡ 2026 Power Unit (ICE vs MGU-K)")
+            st.markdown("#### ⚡ 2026 Power Unit")
             fig_pu = px.bar(
-                pu_df, x="Rating", y="Engine", color="Component", orientation="h",
-                barmode="group",
-                color_discrete_sequence=["#E8002D", "#27F4D2", "#FFD700"],
+                pu_df, x="Rating", y="Engine", orientation="h",
+                color="Rating", color_continuous_scale="Reds",
                 range_x=[60, 100],
             )
             fig_pu.update_layout(
