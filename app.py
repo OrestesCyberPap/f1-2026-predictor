@@ -235,15 +235,13 @@ st.markdown('<div class="separator"></div>', unsafe_allow_html=True)
 
 
 # ──────────────────────────────────────────────
-# Run pipeline and cache results
+# Run pipeline
 # ──────────────────────────────────────────────
-@st.cache_data(show_spinner=False)
 def run_pipeline(force: bool = False):
-    """Run the full ML pipeline and cache results."""
+    """Run the full ML pipeline."""
     return run_full_pipeline(force_refresh=force)
 
 
-@st.cache_data(show_spinner=False)
 def get_track_prediction(_model, track_name, _results_df):
     """Get prediction for a specific track."""
     return predict_race(_model, track_name, _results_df)

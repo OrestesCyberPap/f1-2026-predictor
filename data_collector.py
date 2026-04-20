@@ -286,6 +286,17 @@ def collect_all_data(force_refresh: bool = False) -> dict:
 
     output_dir = Path(__file__).parent / "data"
     
+    # If force refresh, clear the local JSON cache to guarantee fresh API hits
+    if force_refresh:
+        print("[INFO] Force refresh enabled. Clearing local JSON caches...")
+        import shutil
+        if CACHE_DIR.exists():
+            for item in CACHE_DIR.iterdir():
+                if item.is_file():
+                    item.unlink()
+                elif item.is_dir():
+                    shutil.rmtree(item)
+    
     # ── Try to load from static CSV cache first ──
     if not force_refresh:
         try:
