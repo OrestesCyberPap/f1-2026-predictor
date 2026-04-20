@@ -13,26 +13,6 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-# Optional imports — graceful degradation
-try:
-    import fastf1
-    FASTF1_AVAILABLE = True
-except ImportError:
-    FASTF1_AVAILABLE = False
-    print("[WARN] fastf1 not installed. Telemetry features will be unavailable.")
-
-try:
-    from bs4 import BeautifulSoup
-    BS4_AVAILABLE = True
-except ImportError:
-    BS4_AVAILABLE = False
-    print("[WARN] beautifulsoup4 not installed. Web scraping will be unavailable.")
-
-from config_2026 import (
-    HISTORICAL_SEASONS, CURRENT_SEASON, GRID_2026,
-    DRIVER_TO_TEAM, COMPLETED_ROUNDS_2026
-)
-
 # ──────────────────────────────────────────────
 # Constants
 # ──────────────────────────────────────────────
@@ -207,72 +187,6 @@ def fetch_openf1_drivers(session_key: int) -> pd.DataFrame:
 
 
 # ══════════════════════════════════════════════
-# SOURCE 3: FastF1
-# Detailed telemetry, lap times, car data
-# ══════════════════════════════════════════════
-def fetch_fastf1_results(season: int, round_num: int) -> pd.DataFrame:
-    """Fetch race results via FastF1 (includes detailed timing)."""
-    if not FASTF1_AVAILABLE:
-        return pd.DataFrame()
-    try:
-        ff1_cache = CACHE_DIR / "fastf1_cache"
-        ff1_cache.mkdir(parents=True, exist_ok=True)
-        fastf1.Cache.enable_cache(str(ff1_cache))
-        session = fastf1.get_session(season, round_num, "R")
-        session.load(telemetry=False, weather=False, messages=False)
-        results = session.results
-        if results is None or results.empty:
-            return pd.DataFrame()
-
-        df = results[["DriverNumber", "Abbreviation", "FullName", "TeamName",
-                       "GridPosition", "Position", "Points", "Status", "Time"]].copy()
-        df.columns = ["driver_number", "abbreviation", "driver", "team",
-                       "grid_position", "finish_position", "points", "status", "race_time"]
-        df["season"] = season
-        df["round"] = round_num
-        print(f"  [FastF1] {season} R{round_num}: {len(df)} drivers")
-        return df
-    except Exception as e:
-        print(f"  [FastF1] Failed for {season} R{round_num}: {e}")
-        return pd.DataFrame()
-
-
-# ══════════════════════════════════════════════
-# SOURCE 4: Web Scraping (Supplementary)
-# Wikipedia F1 2026 season page for confirmation
-# ══════════════════════════════════════════════
-def scrape_f1_wiki_standings() -> pd.DataFrame:
-    """Scrape the 2026 F1 season Wikipedia page for latest standings."""
-    if not BS4_AVAILABLE:
-        return pd.DataFrame()
-    try:
-        url = "https://en.wikipedia.org/wiki/2026_Formula_One_World_Championship"
-        resp = requests.get(url, timeout=15)
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "lxml")
-
-        # Try to find the drivers' championship standings table
-        tables = soup.find_all("table", class_="wikitable")
-        for table in tables:
-            headers = [th.get_text(strip=True) for th in table.find_all("th")]
-            if "Driver" in headers and ("Pts" in headers or "Points" in headers):
-                rows = []
-                for tr in table.find_all("tr")[1:]:
-                    cells = [td.get_text(strip=True) for td in tr.find_all(["td", "th"])]
-                    if len(cells) >= 3:
-                        rows.append(cells)
-                if rows:
-                    df = pd.DataFrame(rows, columns=headers[:len(rows[0])])
-                    print(f"  [Wiki] Scraped standings table with {len(df)} rows")
-                    return df
-        print("  [Wiki] No standings table found")
-        return pd.DataFrame()
-    except Exception as e:
-        print(f"  [Wiki] Scraping failed: {e}")
-        return pd.DataFrame()
-
-
-# ══════════════════════════════════════════════
 # MASTER COLLECTION PIPELINE
 # ══════════════════════════════════════════════
 def collect_all_data(force_refresh: bool = False) -> dict:
@@ -319,8 +233,6 @@ def collect_all_data(force_refresh: bool = False) -> dict:
                     "qualifying": combined_qualifying,
                     "standings": combined_standings,
                     "openf1_sessions": openf1_sessions,
-                    "fastf1_results": pd.DataFrame(),
-                    "wiki_standings": pd.DataFrame(),
                 }
                 print("\n[INFO] Data loaded instantly from cache.")
                 return dataset
@@ -364,24 +276,11 @@ def collect_all_data(force_refresh: bool = False) -> dict:
     print(f"\n[Phase 3] Fetching {CURRENT_SEASON} data from OpenF1...")
     openf1_sessions = fetch_openf1_sessions(CURRENT_SEASON)
 
-    # ── 2026 data from FastF1 ──
-    print(f"\n[Phase 4] Fetching {CURRENT_SEASON} data from FastF1...")
-    fastf1_results = []
-    for rnd in range(1, COMPLETED_ROUNDS_2026 + 1):
-        ff1_df = fetch_fastf1_results(CURRENT_SEASON, rnd)
-        if not ff1_df.empty:
-            fastf1_results.append(ff1_df)
-
-    # ── Supplementary Wikipedia scrape ──
-    print(f"\n[Phase 5] Scraping Wikipedia for supplementary data...")
-    wiki_standings = scrape_f1_wiki_standings()
-
     # ── Consolidate ──
-    print("\n[Phase 6] Consolidating datasets...")
+    print("\n[Phase 4] Consolidating datasets...")
     combined_results = pd.concat(all_results, ignore_index=True) if all_results else pd.DataFrame()
     combined_qualifying = pd.concat(all_qualifying, ignore_index=True) if all_qualifying else pd.DataFrame()
     combined_standings = pd.concat(all_standings, ignore_index=True) if all_standings else pd.DataFrame()
-    combined_fastf1 = pd.concat(fastf1_results, ignore_index=True) if fastf1_results else pd.DataFrame()
 
     # Save consolidated data
     # Save consolidated data
@@ -398,8 +297,6 @@ def collect_all_data(force_refresh: bool = False) -> dict:
         "qualifying": combined_qualifying,
         "standings": combined_standings,
         "openf1_sessions": openf1_sessions,
-        "fastf1_results": combined_fastf1,
-        "wiki_standings": wiki_standings,
     }
 
     total_rows = sum(len(v) for v in dataset.values() if isinstance(v, pd.DataFrame))
