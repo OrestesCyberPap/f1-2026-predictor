@@ -13,6 +13,10 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
+from config_2026 import (
+    HISTORICAL_SEASONS, CURRENT_SEASON, COMPLETED_ROUNDS_2026
+)
+
 # ──────────────────────────────────────────────
 # Constants
 # ──────────────────────────────────────────────
