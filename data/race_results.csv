@@ -1,0 +1,367 @@
+season,round,race_name,circuit,driver,driver_id,team,grid_position,finish_position,points,status,laps,fastest_lap_rank
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Max Verstappen,max_verstappen,Red Bull,1,1,25.0,Finished,57,6
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Sergio Pérez,perez,Red Bull,2,2,18.0,Finished,57,7
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Fernando Alonso,alonso,Aston Martin,5,3,15.0,Finished,57,5
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Carlos Sainz,sainz,Ferrari,4,4,12.0,Finished,57,14
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Lewis Hamilton,hamilton,Mercedes,7,5,10.0,Finished,57,10
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Lance Stroll,stroll,Aston Martin,8,6,8.0,Finished,57,9
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,George Russell,russell,Mercedes,6,7,6.0,Finished,57,17
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Valtteri Bottas,bottas,Alfa Romeo,12,8,4.0,Finished,57,18
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Pierre Gasly,gasly,Alpine F1 Team,20,9,2.0,Finished,57,2
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Alexander Albon,albon,Williams,15,10,1.0,Finished,57,15
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Yuki Tsunoda,tsunoda,AlphaTauri,14,11,0.0,Finished,57,12
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Logan Sargeant,sargeant,Williams,16,12,0.0,Lapped,56,4
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Kevin Magnussen,kevin_magnussen,Haas F1 Team,17,13,0.0,Lapped,56,8
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Nyck de Vries,de_vries,AlphaTauri,19,14,0.0,Lapped,56,19
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Nico Hülkenberg,hulkenberg,Haas F1 Team,10,15,0.0,Lapped,56,11
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Guanyu Zhou,zhou,Alfa Romeo,13,16,0.0,Lapped,56,1
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Lando Norris,norris,McLaren,11,17,0.0,Lapped,55,3
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Esteban Ocon,ocon,Alpine F1 Team,9,18,0.0,Retired,41,13
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Charles Leclerc,leclerc,Ferrari,3,19,0.0,Retired,39,16
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,Oscar Piastri,piastri,McLaren,18,20,0.0,Retired,13,20
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Sergio Pérez,perez,Red Bull,1,1,25.0,Finished,50,2
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Max Verstappen,max_verstappen,Red Bull,15,2,19.0,Finished,50,1
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Fernando Alonso,alonso,Aston Martin,2,3,15.0,Finished,50,3
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,George Russell,russell,Mercedes,3,4,12.0,Finished,50,4
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Lewis Hamilton,hamilton,Mercedes,7,5,10.0,Finished,50,6
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Carlos Sainz,sainz,Ferrari,4,6,8.0,Finished,50,5
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Charles Leclerc,leclerc,Ferrari,12,7,6.0,Finished,50,7
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Esteban Ocon,ocon,Alpine F1 Team,6,8,4.0,Finished,50,8
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Pierre Gasly,gasly,Alpine F1 Team,9,9,2.0,Finished,50,10
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Kevin Magnussen,kevin_magnussen,Haas F1 Team,13,10,1.0,Finished,50,9
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Yuki Tsunoda,tsunoda,AlphaTauri,16,11,0.0,Finished,50,14
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Nico Hülkenberg,hulkenberg,Haas F1 Team,10,12,0.0,Finished,50,12
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Guanyu Zhou,zhou,Alfa Romeo,11,13,0.0,Finished,50,13
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Nyck de Vries,de_vries,AlphaTauri,18,14,0.0,Finished,50,11
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Oscar Piastri,piastri,McLaren,8,15,0.0,Finished,50,16
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Logan Sargeant,sargeant,Williams,20,16,0.0,Finished,50,18
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Lando Norris,norris,McLaren,19,17,0.0,Finished,50,15
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Valtteri Bottas,bottas,Alfa Romeo,14,18,0.0,Lapped,49,17
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Alexander Albon,albon,Williams,17,19,0.0,Retired,27,20
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Lance Stroll,stroll,Aston Martin,5,20,0.0,Retired,16,19
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Max Verstappen,max_verstappen,Red Bull,1,1,25.0,Finished,58,2
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Lewis Hamilton,hamilton,Mercedes,3,2,18.0,Finished,58,5
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Fernando Alonso,alonso,Aston Martin,4,3,15.0,Finished,58,4
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Lance Stroll,stroll,Aston Martin,6,4,12.0,Finished,58,6
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Sergio Pérez,perez,Red Bull,20,5,11.0,Finished,58,1
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Lando Norris,norris,McLaren,13,6,8.0,Finished,58,9
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Nico Hülkenberg,hulkenberg,Haas F1 Team,10,7,6.0,Finished,58,8
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Oscar Piastri,piastri,McLaren,16,8,4.0,Finished,58,12
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Guanyu Zhou,zhou,Alfa Romeo,17,9,2.0,Finished,58,16
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Yuki Tsunoda,tsunoda,AlphaTauri,12,10,1.0,Finished,58,15
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Valtteri Bottas,bottas,Alfa Romeo,19,11,0.0,Finished,58,17
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Carlos Sainz,sainz,Ferrari,5,12,0.0,Finished,58,3
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Pierre Gasly,gasly,Alpine F1 Team,9,13,0.0,Retired,56,7
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Esteban Ocon,ocon,Alpine F1 Team,11,14,0.0,Retired,56,11
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Nyck de Vries,de_vries,AlphaTauri,15,15,0.0,Retired,56,10
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Logan Sargeant,sargeant,Williams,18,16,0.0,Retired,56,13
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Kevin Magnussen,kevin_magnussen,Haas F1 Team,14,17,0.0,Retired,52,14
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,George Russell,russell,Mercedes,2,18,0.0,Retired,17,18
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Alexander Albon,albon,Williams,8,19,0.0,Retired,6,19
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Charles Leclerc,leclerc,Ferrari,7,20,0.0,Retired,0,99
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Sergio Pérez,perez,Red Bull,3,1,25.0,Finished,51,5
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Max Verstappen,max_verstappen,Red Bull,2,2,18.0,Finished,51,2
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Charles Leclerc,leclerc,Ferrari,1,3,15.0,Finished,51,4
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Fernando Alonso,alonso,Aston Martin,6,4,12.0,Finished,51,3
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Carlos Sainz,sainz,Ferrari,4,5,10.0,Finished,51,6
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Lewis Hamilton,hamilton,Mercedes,5,6,8.0,Finished,51,7
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Lance Stroll,stroll,Aston Martin,9,7,6.0,Finished,51,9
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,George Russell,russell,Mercedes,11,8,5.0,Finished,51,1
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Lando Norris,norris,McLaren,7,9,2.0,Finished,51,12
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Yuki Tsunoda,tsunoda,AlphaTauri,8,10,1.0,Finished,51,11
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Oscar Piastri,piastri,McLaren,10,11,0.0,Finished,51,10
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Alexander Albon,albon,Williams,12,12,0.0,Finished,51,15
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Kevin Magnussen,kevin_magnussen,Haas F1 Team,16,13,0.0,Finished,51,13
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Pierre Gasly,gasly,Alpine F1 Team,17,14,0.0,Finished,51,8
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Esteban Ocon,ocon,Alpine F1 Team,19,15,0.0,Finished,51,14
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Logan Sargeant,sargeant,Williams,14,16,0.0,Finished,51,17
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Nico Hülkenberg,hulkenberg,Haas F1 Team,20,17,0.0,Lapped,50,18
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Valtteri Bottas,bottas,Alfa Romeo,13,18,0.0,Lapped,50,16
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Guanyu Zhou,zhou,Alfa Romeo,15,19,0.0,Retired,36,19
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,Nyck de Vries,de_vries,AlphaTauri,18,20,0.0,Retired,9,20
+2023,5,Miami Grand Prix,Miami International Autodrome,Max Verstappen,max_verstappen,Red Bull,9,1,26.0,Finished,57,1
+2023,5,Miami Grand Prix,Miami International Autodrome,Sergio Pérez,perez,Red Bull,1,2,18.0,Finished,57,3
+2023,5,Miami Grand Prix,Miami International Autodrome,Fernando Alonso,alonso,Aston Martin,2,3,15.0,Finished,57,2
+2023,5,Miami Grand Prix,Miami International Autodrome,George Russell,russell,Mercedes,6,4,12.0,Finished,57,7
+2023,5,Miami Grand Prix,Miami International Autodrome,Carlos Sainz,sainz,Ferrari,3,5,10.0,Finished,57,10
+2023,5,Miami Grand Prix,Miami International Autodrome,Lewis Hamilton,hamilton,Mercedes,13,6,8.0,Finished,57,4
+2023,5,Miami Grand Prix,Miami International Autodrome,Charles Leclerc,leclerc,Ferrari,7,7,6.0,Finished,57,11
+2023,5,Miami Grand Prix,Miami International Autodrome,Pierre Gasly,gasly,Alpine F1 Team,5,8,4.0,Finished,57,17
+2023,5,Miami Grand Prix,Miami International Autodrome,Esteban Ocon,ocon,Alpine F1 Team,8,9,2.0,Finished,57,9
+2023,5,Miami Grand Prix,Miami International Autodrome,Kevin Magnussen,kevin_magnussen,Haas F1 Team,4,10,1.0,Finished,57,13
+2023,5,Miami Grand Prix,Miami International Autodrome,Yuki Tsunoda,tsunoda,AlphaTauri,17,11,0.0,Finished,57,8
+2023,5,Miami Grand Prix,Miami International Autodrome,Lance Stroll,stroll,Aston Martin,18,12,0.0,Finished,57,5
+2023,5,Miami Grand Prix,Miami International Autodrome,Valtteri Bottas,bottas,Alfa Romeo,10,13,0.0,Finished,57,15
+2023,5,Miami Grand Prix,Miami International Autodrome,Alexander Albon,albon,Williams,11,14,0.0,Finished,57,16
+2023,5,Miami Grand Prix,Miami International Autodrome,Nico Hülkenberg,hulkenberg,Haas F1 Team,12,15,0.0,Finished,57,6
+2023,5,Miami Grand Prix,Miami International Autodrome,Guanyu Zhou,zhou,Alfa Romeo,14,16,0.0,Finished,57,14
+2023,5,Miami Grand Prix,Miami International Autodrome,Lando Norris,norris,McLaren,16,17,0.0,Finished,57,20
+2023,5,Miami Grand Prix,Miami International Autodrome,Nyck de Vries,de_vries,AlphaTauri,15,18,0.0,Finished,57,12
+2023,5,Miami Grand Prix,Miami International Autodrome,Oscar Piastri,piastri,McLaren,19,19,0.0,Lapped,56,18
+2023,5,Miami Grand Prix,Miami International Autodrome,Logan Sargeant,sargeant,Williams,20,20,0.0,Lapped,56,19
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Max Verstappen,max_verstappen,Red Bull,1,1,26.0,Finished,57,1
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Sergio Pérez,perez,Red Bull,5,2,18.0,Finished,57,4
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Carlos Sainz,sainz,Ferrari,4,3,15.0,Finished,57,6
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Charles Leclerc,leclerc,Ferrari,2,4,12.0,Finished,57,2
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,George Russell,russell,Mercedes,3,5,10.0,Finished,57,12
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Lando Norris,norris,McLaren,7,6,8.0,Finished,57,5
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Lewis Hamilton,hamilton,Mercedes,9,7,6.0,Finished,57,7
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Oscar Piastri,piastri,McLaren,8,8,4.0,Finished,57,11
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Fernando Alonso,alonso,Aston Martin,6,9,2.0,Finished,57,3
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Lance Stroll,stroll,Aston Martin,12,10,1.0,Finished,57,16
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Guanyu Zhou,zhou,Sauber,17,11,0.0,Lapped,56,14
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Kevin Magnussen,kevin_magnussen,Haas F1 Team,15,12,0.0,Lapped,56,15
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Daniel Ricciardo,ricciardo,RB F1 Team,14,13,0.0,Lapped,56,13
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Yuki Tsunoda,tsunoda,RB F1 Team,11,14,0.0,Lapped,56,18
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Alexander Albon,albon,Williams,13,15,0.0,Lapped,56,17
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Nico Hülkenberg,hulkenberg,Haas F1 Team,10,16,0.0,Lapped,56,10
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Esteban Ocon,ocon,Alpine F1 Team,19,17,0.0,Lapped,56,20
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Pierre Gasly,gasly,Alpine F1 Team,20,18,0.0,Lapped,56,9
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Valtteri Bottas,bottas,Sauber,16,19,0.0,Lapped,56,19
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,Logan Sargeant,sargeant,Williams,18,20,0.0,Lapped,55,8
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Max Verstappen,max_verstappen,Red Bull,1,1,25.0,Finished,50,3
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Sergio Pérez,perez,Red Bull,3,2,18.0,Finished,50,8
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Charles Leclerc,leclerc,Ferrari,2,3,16.0,Finished,50,1
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Oscar Piastri,piastri,McLaren,5,4,12.0,Finished,50,10
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Fernando Alonso,alonso,Aston Martin,4,5,10.0,Finished,50,13
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,George Russell,russell,Mercedes,7,6,8.0,Finished,50,7
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Oliver Bearman,bearman,Ferrari,11,7,6.0,Finished,50,5
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Lando Norris,norris,McLaren,6,8,4.0,Finished,50,4
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Lewis Hamilton,hamilton,Mercedes,8,9,2.0,Finished,50,2
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Nico Hülkenberg,hulkenberg,Haas F1 Team,15,10,1.0,Finished,50,12
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Alexander Albon,albon,Williams,12,11,0.0,Finished,50,9
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Kevin Magnussen,kevin_magnussen,Haas F1 Team,13,12,0.0,Finished,50,11
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Esteban Ocon,ocon,Alpine F1 Team,17,13,0.0,Lapped,49,17
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Logan Sargeant,sargeant,Williams,19,14,0.0,Lapped,49,15
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Yuki Tsunoda,tsunoda,RB F1 Team,9,15,0.0,Lapped,49,18
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Daniel Ricciardo,ricciardo,RB F1 Team,14,16,0.0,Lapped,49,16
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Valtteri Bottas,bottas,Sauber,16,17,0.0,Lapped,49,14
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Guanyu Zhou,zhou,Sauber,20,18,0.0,Lapped,49,6
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Lance Stroll,stroll,Aston Martin,10,19,0.0,Retired,5,19
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Pierre Gasly,gasly,Alpine F1 Team,18,20,0.0,Retired,1,99
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Carlos Sainz,sainz,Ferrari,2,1,25.0,Finished,58,3
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Charles Leclerc,leclerc,Ferrari,4,2,19.0,Finished,58,1
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Lando Norris,norris,McLaren,3,3,15.0,Finished,58,2
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Oscar Piastri,piastri,McLaren,5,4,12.0,Finished,58,4
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Sergio Pérez,perez,Red Bull,6,5,10.0,Finished,58,6
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Lance Stroll,stroll,Aston Martin,9,6,8.0,Finished,58,8
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Yuki Tsunoda,tsunoda,RB F1 Team,8,7,6.0,Finished,58,11
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Fernando Alonso,alonso,Aston Martin,10,8,4.0,Finished,58,7
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Nico Hülkenberg,hulkenberg,Haas F1 Team,16,9,2.0,Finished,58,12
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Kevin Magnussen,kevin_magnussen,Haas F1 Team,14,10,1.0,Lapped,57,9
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Alexander Albon,albon,Williams,12,11,0.0,Lapped,57,17
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Daniel Ricciardo,ricciardo,RB F1 Team,18,12,0.0,Lapped,57,13
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Pierre Gasly,gasly,Alpine F1 Team,17,13,0.0,Lapped,57,10
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Valtteri Bottas,bottas,Sauber,13,14,0.0,Lapped,57,16
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Guanyu Zhou,zhou,Sauber,19,15,0.0,Lapped,57,14
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Esteban Ocon,ocon,Alpine F1 Team,15,16,0.0,Lapped,57,15
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,George Russell,russell,Mercedes,7,17,0.0,Retired,56,5
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Lewis Hamilton,hamilton,Mercedes,11,18,0.0,Retired,15,18
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,Max Verstappen,max_verstappen,Red Bull,1,19,0.0,Retired,3,19
+2024,4,Japanese Grand Prix,Suzuka Circuit,Max Verstappen,max_verstappen,Red Bull,1,1,26.0,Finished,53,1
+2024,4,Japanese Grand Prix,Suzuka Circuit,Sergio Pérez,perez,Red Bull,2,2,18.0,Finished,53,3
+2024,4,Japanese Grand Prix,Suzuka Circuit,Carlos Sainz,sainz,Ferrari,4,3,15.0,Finished,53,2
+2024,4,Japanese Grand Prix,Suzuka Circuit,Charles Leclerc,leclerc,Ferrari,8,4,12.0,Finished,53,9
+2024,4,Japanese Grand Prix,Suzuka Circuit,Lando Norris,norris,McLaren,3,5,10.0,Finished,53,10
+2024,4,Japanese Grand Prix,Suzuka Circuit,Fernando Alonso,alonso,Aston Martin,5,6,8.0,Finished,53,6
+2024,4,Japanese Grand Prix,Suzuka Circuit,George Russell,russell,Mercedes,9,7,6.0,Finished,53,5
+2024,4,Japanese Grand Prix,Suzuka Circuit,Oscar Piastri,piastri,McLaren,6,8,4.0,Finished,53,7
+2024,4,Japanese Grand Prix,Suzuka Circuit,Lewis Hamilton,hamilton,Mercedes,7,9,2.0,Finished,53,4
+2024,4,Japanese Grand Prix,Suzuka Circuit,Yuki Tsunoda,tsunoda,RB F1 Team,10,10,1.0,Lapped,52,14
+2024,4,Japanese Grand Prix,Suzuka Circuit,Nico Hülkenberg,hulkenberg,Haas F1 Team,12,11,0.0,Lapped,52,11
+2024,4,Japanese Grand Prix,Suzuka Circuit,Lance Stroll,stroll,Aston Martin,16,12,0.0,Lapped,52,12
+2024,4,Japanese Grand Prix,Suzuka Circuit,Kevin Magnussen,kevin_magnussen,Haas F1 Team,18,13,0.0,Lapped,52,17
+2024,4,Japanese Grand Prix,Suzuka Circuit,Valtteri Bottas,bottas,Sauber,13,14,0.0,Lapped,52,15
+2024,4,Japanese Grand Prix,Suzuka Circuit,Esteban Ocon,ocon,Alpine F1 Team,15,15,0.0,Lapped,52,13
+2024,4,Japanese Grand Prix,Suzuka Circuit,Pierre Gasly,gasly,Alpine F1 Team,17,16,0.0,Lapped,52,16
+2024,4,Japanese Grand Prix,Suzuka Circuit,Logan Sargeant,sargeant,Williams,19,17,0.0,Lapped,52,8
+2024,4,Japanese Grand Prix,Suzuka Circuit,Guanyu Zhou,zhou,Sauber,20,18,0.0,Retired,12,18
+2024,4,Japanese Grand Prix,Suzuka Circuit,Daniel Ricciardo,ricciardo,RB F1 Team,11,19,0.0,Retired,0,99
+2024,4,Japanese Grand Prix,Suzuka Circuit,Alexander Albon,albon,Williams,14,20,0.0,Retired,0,99
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Max Verstappen,max_verstappen,Red Bull,1,1,25.0,Finished,56,2
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Lando Norris,norris,McLaren,4,2,18.0,Finished,56,4
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Sergio Pérez,perez,Red Bull,2,3,15.0,Finished,56,7
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Charles Leclerc,leclerc,Ferrari,6,4,12.0,Finished,56,6
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Carlos Sainz,sainz,Ferrari,7,5,10.0,Finished,56,10
+2024,5,Chinese Grand Prix,Shanghai International Circuit,George Russell,russell,Mercedes,8,6,8.0,Finished,56,11
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Fernando Alonso,alonso,Aston Martin,3,7,7.0,Finished,56,1
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Oscar Piastri,piastri,McLaren,5,8,4.0,Finished,56,9
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Lewis Hamilton,hamilton,Mercedes,18,9,2.0,Finished,56,14
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Nico Hülkenberg,hulkenberg,Haas F1 Team,9,10,1.0,Finished,56,13
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Esteban Ocon,ocon,Alpine F1 Team,13,11,0.0,Finished,56,15
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Alexander Albon,albon,Williams,14,12,0.0,Finished,56,12
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Pierre Gasly,gasly,Alpine F1 Team,15,13,0.0,Finished,56,5
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Guanyu Zhou,zhou,Sauber,16,14,0.0,Finished,56,3
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Lance Stroll,stroll,Aston Martin,11,15,0.0,Finished,56,8
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Kevin Magnussen,kevin_magnussen,Haas F1 Team,17,16,0.0,Finished,56,18
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Logan Sargeant,sargeant,Williams,20,17,0.0,Finished,56,17
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Daniel Ricciardo,ricciardo,RB F1 Team,12,18,0.0,Retired,33,16
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Yuki Tsunoda,tsunoda,RB F1 Team,19,19,0.0,Retired,26,20
+2024,5,Chinese Grand Prix,Shanghai International Circuit,Valtteri Bottas,bottas,Sauber,10,20,0.0,Retired,19,19
+2024,6,Miami Grand Prix,Miami International Autodrome,Lando Norris,norris,McLaren,5,1,25.0,Finished,57,5
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Lando Norris,norris,McLaren,1,1,25.0,Finished,57,1
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Max Verstappen,max_verstappen,Red Bull,3,2,18.0,Finished,57,3
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,George Russell,russell,Mercedes,4,3,15.0,Finished,57,11
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Andrea Kimi Antonelli,antonelli,Mercedes,16,4,12.0,Finished,57,9
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Alexander Albon,albon,Williams,6,5,10.0,Finished,57,8
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Lance Stroll,stroll,Aston Martin,13,6,8.0,Finished,57,14
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Nico Hülkenberg,hulkenberg,Sauber,17,7,6.0,Finished,57,12
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Charles Leclerc,leclerc,Ferrari,7,8,4.0,Finished,57,13
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Oscar Piastri,piastri,McLaren,2,9,2.0,Finished,57,4
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Lewis Hamilton,hamilton,Ferrari,8,10,1.0,Finished,57,7
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Pierre Gasly,gasly,Alpine F1 Team,9,11,0.0,Finished,57,10
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Yuki Tsunoda,tsunoda,RB F1 Team,5,12,0.0,Finished,57,6
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Esteban Ocon,ocon,Haas F1 Team,19,13,0.0,Finished,57,15
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Oliver Bearman,bearman,Haas F1 Team,20,14,0.0,Finished,57,16
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Liam Lawson,lawson,Red Bull,18,15,0.0,Retired,46,2
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Gabriel Bortoleto,bortoleto,Sauber,15,16,0.0,Retired,45,5
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Fernando Alonso,alonso,Aston Martin,12,17,0.0,Retired,32,17
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Carlos Sainz,sainz,Williams,10,18,0.0,Retired,0,99
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Jack Doohan,doohan,Alpine F1 Team,14,19,0.0,Retired,0,99
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Isack Hadjar,hadjar,RB F1 Team,11,20,0.0,Retired,0,99
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Oscar Piastri,piastri,McLaren,1,1,25.0,Finished,56,3
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Lando Norris,norris,McLaren,3,2,18.0,Finished,56,1
+2025,2,Chinese Grand Prix,Shanghai International Circuit,George Russell,russell,Mercedes,2,3,15.0,Finished,56,5
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Max Verstappen,max_verstappen,Red Bull,4,4,12.0,Finished,56,2
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Esteban Ocon,ocon,Haas F1 Team,11,5,10.0,Finished,56,4
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Andrea Kimi Antonelli,antonelli,Mercedes,8,6,8.0,Finished,56,11
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Alexander Albon,albon,Williams,10,7,6.0,Finished,56,12
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Oliver Bearman,bearman,Haas F1 Team,17,8,4.0,Finished,56,13
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Lance Stroll,stroll,Aston Martin,14,9,2.0,Finished,56,10
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Carlos Sainz,sainz,Williams,15,10,1.0,Finished,56,15
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Isack Hadjar,hadjar,RB F1 Team,7,11,0.0,Finished,56,6
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Liam Lawson,lawson,Red Bull,20,12,0.0,Finished,56,9
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Jack Doohan,doohan,Alpine F1 Team,18,13,0.0,Finished,56,14
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Gabriel Bortoleto,bortoleto,Sauber,19,14,0.0,Lapped,55,8
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Nico Hülkenberg,hulkenberg,Sauber,12,15,0.0,Lapped,55,16
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Yuki Tsunoda,tsunoda,RB F1 Team,9,16,0.0,Lapped,55,7
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Fernando Alonso,alonso,Aston Martin,13,17,0.0,Retired,4,17
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Charles Leclerc,leclerc,Ferrari,6,18,0.0,Disqualified,0,99
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Lewis Hamilton,hamilton,Ferrari,5,19,0.0,Disqualified,0,99
+2025,2,Chinese Grand Prix,Shanghai International Circuit,Pierre Gasly,gasly,Alpine F1 Team,16,20,0.0,Disqualified,0,99
+2025,3,Japanese Grand Prix,Suzuka Circuit,Max Verstappen,max_verstappen,Red Bull,1,1,25.0,Finished,53,3
+2025,3,Japanese Grand Prix,Suzuka Circuit,Lando Norris,norris,McLaren,2,2,18.0,Finished,53,5
+2025,3,Japanese Grand Prix,Suzuka Circuit,Oscar Piastri,piastri,McLaren,3,3,15.0,Finished,53,2
+2025,3,Japanese Grand Prix,Suzuka Circuit,Charles Leclerc,leclerc,Ferrari,4,4,12.0,Finished,53,10
+2025,3,Japanese Grand Prix,Suzuka Circuit,George Russell,russell,Mercedes,5,5,10.0,Finished,53,8
+2025,3,Japanese Grand Prix,Suzuka Circuit,Andrea Kimi Antonelli,antonelli,Mercedes,6,6,8.0,Finished,53,1
+2025,3,Japanese Grand Prix,Suzuka Circuit,Lewis Hamilton,hamilton,Ferrari,8,7,6.0,Finished,53,9
+2025,3,Japanese Grand Prix,Suzuka Circuit,Isack Hadjar,hadjar,RB F1 Team,7,8,4.0,Finished,53,7
+2025,3,Japanese Grand Prix,Suzuka Circuit,Alexander Albon,albon,Williams,9,9,2.0,Finished,53,6
+2025,3,Japanese Grand Prix,Suzuka Circuit,Oliver Bearman,bearman,Haas F1 Team,10,10,1.0,Finished,53,15
+2025,3,Japanese Grand Prix,Suzuka Circuit,Fernando Alonso,alonso,Aston Martin,12,11,0.0,Finished,53,11
+2025,3,Japanese Grand Prix,Suzuka Circuit,Yuki Tsunoda,tsunoda,Red Bull,14,12,0.0,Finished,53,13
+2025,3,Japanese Grand Prix,Suzuka Circuit,Pierre Gasly,gasly,Alpine F1 Team,11,13,0.0,Finished,53,12
+2025,3,Japanese Grand Prix,Suzuka Circuit,Carlos Sainz,sainz,Williams,15,14,0.0,Finished,53,4
+2025,3,Japanese Grand Prix,Suzuka Circuit,Jack Doohan,doohan,Alpine F1 Team,19,15,0.0,Finished,53,20
+2025,3,Japanese Grand Prix,Suzuka Circuit,Nico Hülkenberg,hulkenberg,Sauber,16,16,0.0,Finished,53,19
+2025,3,Japanese Grand Prix,Suzuka Circuit,Liam Lawson,lawson,RB F1 Team,13,17,0.0,Finished,53,17
+2025,3,Japanese Grand Prix,Suzuka Circuit,Esteban Ocon,ocon,Haas F1 Team,18,18,0.0,Finished,53,14
+2025,3,Japanese Grand Prix,Suzuka Circuit,Gabriel Bortoleto,bortoleto,Sauber,17,19,0.0,Finished,53,16
+2025,3,Japanese Grand Prix,Suzuka Circuit,Lance Stroll,stroll,Aston Martin,20,20,0.0,Lapped,52,18
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Oscar Piastri,piastri,McLaren,1,1,25.0,Finished,57,1
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,George Russell,russell,Mercedes,3,2,18.0,Finished,57,2
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Lando Norris,norris,McLaren,6,3,15.0,Finished,57,3
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Charles Leclerc,leclerc,Ferrari,2,4,12.0,Finished,57,4
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Lewis Hamilton,hamilton,Ferrari,9,5,10.0,Finished,57,6
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Max Verstappen,max_verstappen,Red Bull,7,6,8.0,Finished,57,5
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Pierre Gasly,gasly,Alpine F1 Team,4,7,6.0,Finished,57,7
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Esteban Ocon,ocon,Haas F1 Team,14,8,4.0,Finished,57,12
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Yuki Tsunoda,tsunoda,Red Bull,10,9,2.0,Finished,57,14
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Oliver Bearman,bearman,Haas F1 Team,20,10,1.0,Finished,57,15
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Andrea Kimi Antonelli,antonelli,Mercedes,5,11,0.0,Finished,57,9
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Alexander Albon,albon,Williams,15,12,0.0,Finished,57,13
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Isack Hadjar,hadjar,RB F1 Team,12,13,0.0,Finished,57,10
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Jack Doohan,doohan,Alpine F1 Team,11,14,0.0,Finished,57,8
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Fernando Alonso,alonso,Aston Martin,13,15,0.0,Finished,57,17
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Liam Lawson,lawson,RB F1 Team,17,16,0.0,Finished,57,16
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Lance Stroll,stroll,Aston Martin,19,17,0.0,Finished,57,19
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Gabriel Bortoleto,bortoleto,Sauber,18,18,0.0,Finished,57,18
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Carlos Sainz,sainz,Williams,8,19,0.0,Retired,45,11
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,Nico Hülkenberg,hulkenberg,Sauber,16,20,0.0,Disqualified,0,99
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Oscar Piastri,piastri,McLaren,2,1,25.0,Finished,50,3
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Max Verstappen,max_verstappen,Red Bull,1,2,18.0,Finished,50,4
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Charles Leclerc,leclerc,Ferrari,4,3,15.0,Finished,50,2
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Lando Norris,norris,McLaren,10,4,12.0,Finished,50,1
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,George Russell,russell,Mercedes,3,5,10.0,Finished,50,9
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Andrea Kimi Antonelli,antonelli,Mercedes,5,6,8.0,Finished,50,5
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Lewis Hamilton,hamilton,Ferrari,7,7,6.0,Finished,50,7
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Carlos Sainz,sainz,Williams,6,8,4.0,Finished,50,6
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Alexander Albon,albon,Williams,11,9,2.0,Finished,50,16
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Isack Hadjar,hadjar,RB F1 Team,14,10,1.0,Finished,50,14
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Fernando Alonso,alonso,Aston Martin,13,11,0.0,Finished,50,11
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Liam Lawson,lawson,RB F1 Team,12,12,0.0,Finished,50,10
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Oliver Bearman,bearman,Haas F1 Team,15,13,0.0,Finished,50,13
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Esteban Ocon,ocon,Haas F1 Team,19,14,0.0,Finished,50,17
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Nico Hülkenberg,hulkenberg,Sauber,18,15,0.0,Lapped,49,15
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Lance Stroll,stroll,Aston Martin,16,16,0.0,Lapped,49,8
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Jack Doohan,doohan,Alpine F1 Team,17,17,0.0,Lapped,49,12
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Gabriel Bortoleto,bortoleto,Sauber,20,18,0.0,Lapped,49,18
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Yuki Tsunoda,tsunoda,Red Bull,8,19,0.0,Retired,1,99
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Pierre Gasly,gasly,Alpine F1 Team,9,20,0.0,Retired,0,99
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,George Russell,russell,Mercedes,1,1,25.0,Finished,58,6
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Andrea Kimi Antonelli,antonelli,Mercedes,2,2,18.0,Finished,58,3
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Charles Leclerc,leclerc,Ferrari,4,3,15.0,Finished,58,5
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Lewis Hamilton,hamilton,Ferrari,7,4,12.0,Finished,58,4
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Lando Norris,norris,McLaren,6,5,10.0,Finished,58,2
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Max Verstappen,max_verstappen,Red Bull,20,6,8.0,Finished,58,1
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Oliver Bearman,bearman,Haas F1 Team,12,7,6.0,Lapped,57,11
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Arvid Lindblad,arvid_lindblad,RB F1 Team,9,8,4.0,Lapped,57,12
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Gabriel Bortoleto,bortoleto,Audi,10,9,2.0,Lapped,57,8
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Pierre Gasly,gasly,Alpine F1 Team,14,10,1.0,Lapped,57,15
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Esteban Ocon,ocon,Haas F1 Team,13,11,0.0,Lapped,57,14
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Alexander Albon,albon,Williams,15,12,0.0,Lapped,57,13
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Liam Lawson,lawson,RB F1 Team,8,13,0.0,Lapped,57,10
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Franco Colapinto,colapinto,Alpine F1 Team,16,14,0.0,Lapped,56,7
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Carlos Sainz,sainz,Williams,21,15,0.0,Lapped,56,9
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Sergio Pérez,perez,Cadillac F1 Team,18,16,0.0,Lapped,55,19
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Lance Stroll,stroll,Aston Martin,22,17,0.0,Lapped,43,17
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Fernando Alonso,alonso,Aston Martin,17,18,0.0,Retired,21,18
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Valtteri Bottas,bottas,Cadillac F1 Team,19,19,0.0,Retired,15,20
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Isack Hadjar,hadjar,Red Bull,3,20,0.0,Retired,10,16
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Oscar Piastri,piastri,McLaren,5,21,0.0,Did not start,0,99
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,Nico Hülkenberg,hulkenberg,Audi,11,22,0.0,Did not start,0,99
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Andrea Kimi Antonelli,antonelli,Mercedes,1,1,25.0,Finished,56,1
+2026,2,Chinese Grand Prix,Shanghai International Circuit,George Russell,russell,Mercedes,2,2,18.0,Finished,56,2
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Lewis Hamilton,hamilton,Ferrari,3,3,15.0,Finished,56,5
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Charles Leclerc,leclerc,Ferrari,4,4,12.0,Finished,56,4
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Oliver Bearman,bearman,Haas F1 Team,10,5,10.0,Finished,56,8
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Pierre Gasly,gasly,Alpine F1 Team,7,6,8.0,Finished,56,9
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Liam Lawson,lawson,RB F1 Team,14,7,6.0,Finished,56,12
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Isack Hadjar,hadjar,Red Bull,9,8,4.0,Finished,56,13
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Carlos Sainz,sainz,Williams,17,9,2.0,Lapped,55,14
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Franco Colapinto,colapinto,Alpine F1 Team,12,10,1.0,Lapped,55,10
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Nico Hülkenberg,hulkenberg,Audi,11,11,0.0,Lapped,55,7
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Arvid Lindblad,arvid_lindblad,RB F1 Team,15,12,0.0,Lapped,55,6
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Valtteri Bottas,bottas,Cadillac F1 Team,19,13,0.0,Lapped,55,15
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Esteban Ocon,ocon,Haas F1 Team,13,14,0.0,Lapped,55,3
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Sergio Pérez,perez,Cadillac F1 Team,21,15,0.0,Lapped,55,16
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Max Verstappen,max_verstappen,Red Bull,8,16,0.0,Retired,45,11
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Fernando Alonso,alonso,Aston Martin,18,17,0.0,Retired,32,17
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Lance Stroll,stroll,Aston Martin,20,18,0.0,Retired,9,18
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Oscar Piastri,piastri,McLaren,5,19,0.0,Did not start,0,99
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Lando Norris,norris,McLaren,6,20,0.0,Did not start,0,99
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Gabriel Bortoleto,bortoleto,Audi,16,21,0.0,Did not start,0,99
+2026,2,Chinese Grand Prix,Shanghai International Circuit,Alexander Albon,albon,Williams,22,22,0.0,Did not start,0,99
+2026,3,Japanese Grand Prix,Suzuka Circuit,Andrea Kimi Antonelli,antonelli,Mercedes,1,1,25.0,Finished,53,1
+2026,3,Japanese Grand Prix,Suzuka Circuit,Oscar Piastri,piastri,McLaren,3,2,18.0,Finished,53,5
+2026,3,Japanese Grand Prix,Suzuka Circuit,Charles Leclerc,leclerc,Ferrari,4,3,15.0,Finished,53,3
+2026,3,Japanese Grand Prix,Suzuka Circuit,George Russell,russell,Mercedes,2,4,12.0,Finished,53,2
+2026,3,Japanese Grand Prix,Suzuka Circuit,Lando Norris,norris,McLaren,5,5,10.0,Finished,53,6
+2026,3,Japanese Grand Prix,Suzuka Circuit,Lewis Hamilton,hamilton,Ferrari,6,6,8.0,Finished,53,4
+2026,3,Japanese Grand Prix,Suzuka Circuit,Pierre Gasly,gasly,Alpine F1 Team,7,7,6.0,Finished,53,9
+2026,3,Japanese Grand Prix,Suzuka Circuit,Max Verstappen,max_verstappen,Red Bull,11,8,4.0,Finished,53,8
+2026,3,Japanese Grand Prix,Suzuka Circuit,Liam Lawson,lawson,RB F1 Team,14,9,2.0,Finished,53,13
+2026,3,Japanese Grand Prix,Suzuka Circuit,Esteban Ocon,ocon,Haas F1 Team,12,10,1.0,Finished,53,14
+2026,3,Japanese Grand Prix,Suzuka Circuit,Nico Hülkenberg,hulkenberg,Audi,13,11,0.0,Finished,53,10
+2026,3,Japanese Grand Prix,Suzuka Circuit,Isack Hadjar,hadjar,Red Bull,8,12,0.0,Finished,53,11
+2026,3,Japanese Grand Prix,Suzuka Circuit,Gabriel Bortoleto,bortoleto,Audi,9,13,0.0,Finished,53,12
+2026,3,Japanese Grand Prix,Suzuka Circuit,Arvid Lindblad,arvid_lindblad,RB F1 Team,10,14,0.0,Finished,53,15
+2026,3,Japanese Grand Prix,Suzuka Circuit,Carlos Sainz,sainz,Williams,16,15,0.0,Finished,53,17
+2026,3,Japanese Grand Prix,Suzuka Circuit,Franco Colapinto,colapinto,Alpine F1 Team,15,16,0.0,Finished,53,16
+2026,3,Japanese Grand Prix,Suzuka Circuit,Sergio Pérez,perez,Cadillac F1 Team,19,17,0.0,Finished,53,19
+2026,3,Japanese Grand Prix,Suzuka Circuit,Fernando Alonso,alonso,Aston Martin,21,18,0.0,Lapped,52,20
+2026,3,Japanese Grand Prix,Suzuka Circuit,Valtteri Bottas,bottas,Cadillac F1 Team,20,19,0.0,Lapped,52,21
+2026,3,Japanese Grand Prix,Suzuka Circuit,Alexander Albon,albon,Williams,17,20,0.0,Lapped,51,7
+2026,3,Japanese Grand Prix,Suzuka Circuit,Lance Stroll,stroll,Aston Martin,22,21,0.0,Retired,30,22
+2026,3,Japanese Grand Prix,Suzuka Circuit,Oliver Bearman,bearman,Haas F1 Team,18,22,0.0,Retired,20,18

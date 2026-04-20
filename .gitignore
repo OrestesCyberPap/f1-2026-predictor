@@ -14,8 +14,6 @@ venv.bak/
 
 # Project specific
 cache/
-data/
-models/
 
 # IDEs
 .idea/

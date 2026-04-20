@@ -245,16 +245,16 @@ def load_model():
 # ──────────────────────────────────────────────
 # Full pipeline: collect → train → predict
 # ──────────────────────────────────────────────
-def run_full_pipeline() -> tuple:
+def run_full_pipeline(force_refresh: bool = False) -> tuple:
     """
     Execute the complete pipeline:
-    1. Collect data from all sources
+    1. Collect data from all sources (loads from cache unless force_refresh=True)
     2. Train the XGBoost model
     3. Predict the next race
     Returns (model, predictions_df, feature_importance_df, eval_metrics)
     """
     # Step 1: Collect data
-    dataset = collect_all_data()
+    dataset = collect_all_data(force_refresh=force_refresh)
     results_df = dataset["results"]
 
     # Step 2: Train model

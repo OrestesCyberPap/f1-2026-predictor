@@ -221,6 +221,7 @@ with st.sidebar:
         st.slider(nice_key, 0.0, 1.0, val, 0.05, key=f"w_{key}", disabled=True)
 
     st.markdown("---")
+    force_refresh = st.checkbox("🔄 Force Fetch New Data (APIs)", value=False, help="Enable this to download the latest race results from the internet instead of using cached data.")
     run_button = st.button("🚀 Run Prediction Pipeline", type="primary", use_container_width=True)
 
 
@@ -237,9 +238,9 @@ st.markdown('<div class="separator"></div>', unsafe_allow_html=True)
 # Run pipeline and cache results
 # ──────────────────────────────────────────────
 @st.cache_data(show_spinner=False)
-def run_pipeline():
+def run_pipeline(force: bool = False):
     """Run the full ML pipeline and cache results."""
-    return run_full_pipeline()
+    return run_full_pipeline(force_refresh=force)
 
 
 @st.cache_data(show_spinner=False)
@@ -256,9 +257,9 @@ if "model" not in st.session_state:
 
 if run_button or st.session_state.pipeline_run:
     if not st.session_state.pipeline_run or run_button:
-        with st.spinner("🔄 Collecting data from 4 sources & training XGBoost model..."):
+        with st.spinner("🔄 Loading datasets & running XGBoost model..."):
             try:
-                model, predictions, fi_df, eval_metrics = run_pipeline()
+                model, predictions, fi_df, eval_metrics = run_pipeline(force=force_refresh)
                 st.session_state.model = model
                 st.session_state.predictions = predictions
                 st.session_state.fi_df = fi_df

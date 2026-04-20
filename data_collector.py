@@ -284,6 +284,38 @@ def collect_all_data(force_refresh: bool = False) -> dict:
     print("F1 2026 PREDICTIVE MODEL — DATA COLLECTION")
     print("=" * 60)
 
+    output_dir = Path(__file__).parent / "data"
+    
+    # ── Try to load from static CSV cache first ──
+    if not force_refresh:
+        try:
+            results_path = output_dir / "race_results.csv"
+            quali_path = output_dir / "qualifying.csv"
+            standings_path = output_dir / "standings.csv"
+            
+            if results_path.exists() and quali_path.exists() and standings_path.exists():
+                print("\n[INFO] Loading pre-compiled datasets from CSV cache...")
+                combined_results = pd.read_csv(results_path)
+                combined_qualifying = pd.read_csv(quali_path)
+                combined_standings = pd.read_csv(standings_path)
+                
+                # Fetch only minimal live OpenF1 data since it's fast
+                print("[INFO] Fetching fast live data from OpenF1...")
+                openf1_sessions = fetch_openf1_sessions(CURRENT_SEASON)
+                
+                dataset = {
+                    "results": combined_results,
+                    "qualifying": combined_qualifying,
+                    "standings": combined_standings,
+                    "openf1_sessions": openf1_sessions,
+                    "fastf1_results": pd.DataFrame(),
+                    "wiki_standings": pd.DataFrame(),
+                }
+                print("\n[INFO] Data loaded instantly from cache.")
+                return dataset
+        except Exception as e:
+            print(f"[WARN] Failed to load from CSV cache: {e}. Falling back to API collection.")
+
     all_results = []
     all_qualifying = []
     all_standings = []
@@ -341,7 +373,7 @@ def collect_all_data(force_refresh: bool = False) -> dict:
     combined_fastf1 = pd.concat(fastf1_results, ignore_index=True) if fastf1_results else pd.DataFrame()
 
     # Save consolidated data
-    output_dir = Path(__file__).parent / "data"
+    # Save consolidated data
     output_dir.mkdir(exist_ok=True)
     if not combined_results.empty:
         combined_results.to_csv(output_dir / "race_results.csv", index=False)
