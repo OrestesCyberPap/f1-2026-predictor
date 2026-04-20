@@ -362,12 +362,12 @@ TRACK_PROFILES = {
 # change in the feature vector.
 # ──────────────────────────────────────────────
 REG_WEIGHTS = {
-    "pu_weight":              0.35,   # Highly car dependent (ICE + MGU-K)
-    "active_aero_weight":     0.30,   # Highly car dependent (X/Z modes)
-    "driver_skill_weight":    0.10,   # Reduced raw driver talent impact
-    "override_weight":        0.05,   # Driver battery management
-    "chassis_agility_weight": 0.15,   # Car mechanical advantage
-    "historical_form_weight": 0.05,   # Suppressed historical bias (prevents past form from dictating 2026)
+    "pu_weight":              0.25,   # How much PU competitiveness affects outcome
+    "active_aero_weight":     0.20,   # How much active aero mastery affects outcome
+    "driver_skill_weight":    0.25,   # Raw driver talent
+    "override_weight":        0.10,   # Manual overtake button exploitation
+    "chassis_agility_weight": 0.10,   # Lighter/shorter car advantage
+    "historical_form_weight": 0.10,   # Rolling form from recent races
 }
 
 # ──────────────────────────────────────────────

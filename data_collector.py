@@ -21,7 +21,6 @@ from config_2026 import (
 # Constants
 # ──────────────────────────────────────────────
 JOLPICA_BASE = "https://api.jolpi.ca/ergast/f1"
-OPENF1_BASE = "https://api.openf1.org/v1"
 CACHE_DIR = Path(__file__).parent / "cache"
 CACHE_DIR.mkdir(exist_ok=True)
 
@@ -153,41 +152,7 @@ def fetch_driver_standings_jolpica(season: int) -> pd.DataFrame:
     return df
 
 
-# ══════════════════════════════════════════════
-# SOURCE 2: OpenF1 API
-# Recent/live race data, driver intervals
-# ══════════════════════════════════════════════
-def fetch_openf1_sessions(year: int) -> pd.DataFrame:
-    """Fetch session data from OpenF1 for a given year."""
-    url = f"{OPENF1_BASE}/sessions?year={year}"
-    cache_key = f"openf1_sessions_{year}"
-    data = _cached_get(url, cache_key)
-    if data is None or not isinstance(data, list):
-        return pd.DataFrame()
-
-    df = pd.DataFrame(data)
-    print(f"  [OpenF1] {year}: {len(df)} sessions found")
-    return df
-
-
-def fetch_openf1_positions(session_key: int) -> pd.DataFrame:
-    """Fetch position data for a specific session from OpenF1."""
-    url = f"{OPENF1_BASE}/position?session_key={session_key}"
-    cache_key = f"openf1_positions_{session_key}"
-    data = _cached_get(url, cache_key)
-    if data is None or not isinstance(data, list):
-        return pd.DataFrame()
-    return pd.DataFrame(data)
-
-
-def fetch_openf1_drivers(session_key: int) -> pd.DataFrame:
-    """Fetch driver info for a specific session from OpenF1."""
-    url = f"{OPENF1_BASE}/drivers?session_key={session_key}"
-    cache_key = f"openf1_drivers_{session_key}"
-    data = _cached_get(url, cache_key)
-    if data is None or not isinstance(data, list):
-        return pd.DataFrame()
-    return pd.DataFrame(data)
+# (Other functions removed for lightweight Jolpica-only mode)
 
 
 # ══════════════════════════════════════════════
@@ -228,15 +193,10 @@ def collect_all_data(force_refresh: bool = False) -> dict:
                 combined_qualifying = pd.read_csv(quali_path)
                 combined_standings = pd.read_csv(standings_path)
                 
-                # Fetch only minimal live OpenF1 data since it's fast
-                print("[INFO] Fetching fast live data from OpenF1...")
-                openf1_sessions = fetch_openf1_sessions(CURRENT_SEASON)
-                
                 dataset = {
                     "results": combined_results,
                     "qualifying": combined_qualifying,
                     "standings": combined_standings,
-                    "openf1_sessions": openf1_sessions,
                 }
                 print("\n[INFO] Data loaded instantly from cache.")
                 return dataset
@@ -276,12 +236,8 @@ def collect_all_data(force_refresh: bool = False) -> dict:
     if not standings_2026.empty:
         all_standings.append(standings_2026)
 
-    # ── 2026 data from OpenF1 ──
-    print(f"\n[Phase 3] Fetching {CURRENT_SEASON} data from OpenF1...")
-    openf1_sessions = fetch_openf1_sessions(CURRENT_SEASON)
-
     # ── Consolidate ──
-    print("\n[Phase 4] Consolidating datasets...")
+    print("\n[Phase 3] Consolidating datasets...")
     combined_results = pd.concat(all_results, ignore_index=True) if all_results else pd.DataFrame()
     combined_qualifying = pd.concat(all_qualifying, ignore_index=True) if all_qualifying else pd.DataFrame()
     combined_standings = pd.concat(all_standings, ignore_index=True) if all_standings else pd.DataFrame()
@@ -300,7 +256,6 @@ def collect_all_data(force_refresh: bool = False) -> dict:
         "results": combined_results,
         "qualifying": combined_qualifying,
         "standings": combined_standings,
-        "openf1_sessions": openf1_sessions,
     }
 
     total_rows = sum(len(v) for v in dataset.values() if isinstance(v, pd.DataFrame))
